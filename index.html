@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="ErintLabs company" />
+	<meta name="author" content="ErintLabs" />
+	<meta name="description" content="ErintLabs is a future of biotechnology" />
+	<meta name="keywords"  content="erintlabs,biotechnology,algae,biofuels,cybernetic dogs,transhumanism,science,linux" />
     <title>ErintLabs</title>
 
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
@@ -14,25 +16,28 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" />
   	<!--<![endif]-->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="/combo/1.18.13?/css/layouts/marketing-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="/combo/1.18.13?/css/layouts/marketing.css" />
-    <!--<![endif]-->
 
 	<!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 	<![endif]-->
+
+	<!--[if IE]>
+	<script type="text/javascript">var console = { log: function() {} };</script>
+	<![endif]-->
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="assets/jquery.fullPage.min.js" />
+	<script src="assets/jquery.fullPage.min.js"></script>
 	<link rel="stylesheet" href="assets/jquery.fullPage.min.css" />
 	<link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-	<div id = "fullpage">
-		<div class = "pure-g section">
+	<ul class ="menu">
+		<li data-menuanchor="whoweare"><a href="#whoweare">Who we are</a></li>
+		<li data-menuanchor="whatwedo"><a href="#whatwedo">What we do</a></li>
+		<li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
+	</ul>
+	<div class = "fullpage">
+		<div class = "pure-g section" id="section0">
 			<div class = "empty pure-u-1-8">
 				&nbsp;
 			</div>
@@ -44,12 +49,29 @@
 				<img src = "assets/alka_2.png" />
 			</div>
 		</div>
-		<div class = "pure-g section">
+		<div class = "pure-g section" id="section1">
+			what we do
+		</div>
+		<div class = "pure-g section" id="section1">
+			contact<br/>
+			Enjoy a <i>Hemidactylus turcicus</i> (Mediterranean house gecko) resting on a lamppost in Èze-Bord-de-Mer, France though.<br/>
+<img width="80%" src="P5300466.jpg"/>
 		</div>
 	</div>
 
-Enjoy a <i>Hemidactylus turcicus</i> (Mediterranean house gecko) resting on a lamppost in Èze-Bord-de-Mer, France though.<br/>
-<img width="80%" src="P5300466.jpg"/>
 
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fullpage').fullpage({
+				anchors: ['whoweare', 'whatwedo', 'contacts'],
+				menu: '.menu',
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+				responsiveWidth: 1100
+			});
+		});
+	</script>
 </body>
 </html>
