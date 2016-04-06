@@ -1,9 +1,105 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="ErintLabs" />
+	<meta name="description" content="ErintLabs is a future of biotechnology" />
+	<meta name="keywords"  content="erintlabs,biotechnology,algae,biofuels,cybernetic dogs,transhumanism,science,linux" />
+    <title>ErintLabs</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css" />
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" />
+  	<!--<![endif]-->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+
+	<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--[if IE]>
+	<script type="text/javascript">var console = { log: function() {} };</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/jquery.fullPage.min.js"></script>
+	<link rel="stylesheet" href="assets/jquery.fullPage.min.css" />
+	<link rel="stylesheet" href="assets/style.css" />
+</head>
 <body>
-<h3>Nothing here yet</h3>
+	<div class = "pure-menu pure-menu-horizontal">
+		<a href = "/" class = "pure-menu-heading pure-menu-link">ErintLabs</a>
+		<ul class="pure-menu-list menu">
+			<li class = "pure-menu-item" data-menuanchor = "whoweare"><a class = "pure-menu-link" href = "#whoweare">Who we are</a></li>
+			<li class = "pure-menu-item" data-menuanchor = "whatwedo"><a class = "pure-menu-link" href = "#whatwedo">What we do</a></li>
+			<li class = "pure-menu-item" data-menuanchor = "contacts"><a class = "pure-menu-link" href = "#contacts">Contacts</a></li>
+		</ul>
+	</div>
+	<div class = "fullpage">
+		<div class = "pure-g section" id = "section0">
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
+			<div class = "pure-u-5-8">
+				<h1>Who we are</h1>
+				<p>We are young developing team fascinated by combining natural and computer sciences. We do variety of things which will definitely improve everyday human life and rise ecological awareness. We are bringing the forbidden future.</p>
+			</div>
+			<div class = "pic right pure-u-1-4">
+				<img src = "assets/alka_2.png" />
+			</div>
+		</div>
+		<div class = "pure-g section" id = "section1">
+			<div class = "pic left pure-u-1-4">
+				<img src = "assets/algae.png" />
+			</div>
+			<div class = "pure-u-5-8 fright">
+				<h1>What we do</h1>
+				<p>Few of our projects include, but not limited to:
+					<ul>
+						<li>Biofuels;</li>
+						<li>Algae generating electricity;</li>
+						<li>Human brain interface;</li>
+						<li>Dog emotion transfer;</li>
+						<li>Linux kernel development</li>
+					</ul>
+				</p>
+			</div>
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
+		</div>
+		<div class = "pure-g section" id = "section2">
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
+			<div class = "pure-u-3-4 center">
+				<h1>Contacts</h1>
+				<ul class = "contacts">
+					<li><a href = "tel:+322322333"><i class = "fa fa-phone"></i>&nbsp;+322 322 333</a></li>
+					<li><a href = "mailto:info@erint.io"><i class = "fa fa-envelope-o"></i>&nbsp;info@erint.io</a></li>
+					<li><a href = "https://github.com/ErintLabs" target = "_blank"><i class = "fa fa-github"></i>&nbsp;browse code</a></li>
+				</ul>
+			</div>
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
+		</div>
+	</div>
 
-Enjoy a <i>Hemidactylus turcicus</i> (Mediterranean house gecko) resting on a lamppost in Èze-Bord-de-Mer, France though.<br/>
-<img width="80%" src="P5300466.jpg"/>
 
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fullpage').fullpage({
+				anchors: ['whoweare', 'whatwedo', 'contacts'],
+				menu: '.menu',
+				navigation: false
+			});
+		});
+	</script>
 </body>
 </html>

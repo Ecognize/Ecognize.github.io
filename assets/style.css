@@ -1,0 +1,71 @@
+body,html
+{
+	color: #333;
+	height: 100%;
+	font-size: 16pt;
+}
+
+.pure-menu
+{
+    z-index: 70;
+    position: fixed;
+}
+
+.menu .active
+{
+	background-color: #eef !important;
+}
+
+.pic img
+{
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.right
+{
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.fright
+{
+	float: right;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.left
+{
+	text-align: left;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.contacts
+{
+	padding: 0px;
+}
+
+.contacts li
+{
+	list-style: none;
+}
+
+.contacts a
+{
+	text-decoration: none;
+	color: #333;
+}
+
+.contacts a:hover
+{
+	color: #999;
+}
