@@ -3,43 +3,36 @@ body,html
 	height: 100%;
 }
 
-.pure-g {
-  display: flex;
-}
-
-.menu
+.pure-menu
 {
-	list-style: none;
-	position: fixed;
-    top: 0;
-    left: 0;
-    height: 40px;
     z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    position: fixed;
 }
 
-.menu li
+.menu .active
 {
-	display: inline-block;
-	margin: 2px 10px;
+	background-color: #eef !important;
 }
 
-.textblock
+.pic img
 {
-	
-
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
 }
 
-.alya 
+.right
 {
 	text-align: right;
-}
-
-.alya img
-{
 	position: absolute;
 	right: 0;
+	bottom: 0;
+}
+
+.left
+{
+	text-align: left;
+	position: absolute;
+	left: 0;
 	bottom: 0;
 }

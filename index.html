@@ -31,31 +31,60 @@
 	<link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-	<ul class ="menu">
-		<li data-menuanchor="whoweare"><a href="#whoweare">Who we are</a></li>
-		<li data-menuanchor="whatwedo"><a href="#whatwedo">What we do</a></li>
-		<li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
-	</ul>
+	<div class = "pure-menu pure-menu-horizontal">
+		<a href = "" class = "pure-menu-heading pure-menu-link">ErintLabs</a>
+		<ul class="pure-menu-list menu">
+			<li class = "pure-menu-item" data-menuanchor = "whoweare"><a class = "pure-menu-link" href = "#whoweare">Who we are</a></li>
+			<li class = "pure-menu-item" data-menuanchor = "whatwedo"><a class = "pure-menu-link" href = "#whatwedo">What we do</a></li>
+			<li class = "pure-menu-item" data-menuanchor = "contacts"><a class = "pure-menu-link" href = "#contacts">Contacts</a></li>
+		</ul>
+	</div>
 	<div class = "fullpage">
-		<div class = "pure-g section" id="section0">
-			<div class = "empty pure-u-1-8">
+		<div class = "pure-g section" id = "section0">
+			<div class = "pure-u-1-8">
 				&nbsp;
 			</div>
-			<div class = "textblock pure-u-5-8">
-				<h3>We are ErintLabs.</h3>
+			<div class = "pure-u-5-8">
+				<h2>Who we are</h2>
 				<p>We are young developing team fascinated by combining natural and computer sciences. We do variety of things which will definitely improve everyday human life and rise ecological awareness. We are bringing the forbidden future.</p>
 			</div>
-			<div class = "alya pure-u-1-4">
+			<div class = "pic right pure-u-1-4">
 				<img src = "assets/alka_2.png" />
 			</div>
 		</div>
-		<div class = "pure-g section" id="section1">
-			what we do
+		<div class = "pure-g section" id = "section1">
+			<div class = "pic left pure-u-1-4">
+				<img src = "assets/algae.png" />
+			</div>
+			<div class = "pure-u-5-8">
+				<h2>What we do</h2>
+				<p>Few of our projects include, but not limited to:
+					<ul>
+						<li>Biofuels;</li>
+						<li>Algae generating electricity;</li>
+						<li>Human brain interface;</li>
+						<li>Dog emotion transfer;</li>
+						<li>Linux kernel development</li>
+					</ul>
+				</p>
+			</div>
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
 		</div>
-		<div class = "pure-g section" id="section1">
-			contact<br/>
-			Enjoy a <i>Hemidactylus turcicus</i> (Mediterranean house gecko) resting on a lamppost in Èze-Bord-de-Mer, France though.<br/>
-<img width="80%" src="P5300466.jpg"/>
+		<div class = "pure-g section" id = "section2">
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
+			<div class = "pure-u-3-4">
+				<p>
+				contact<br/>
+				Enjoy a <i>Hemidactylus turcicus</i> (Mediterranean house gecko) resting on a lamppost in Èze-Bord-de-Mer, France though.<br/>
+				</p>
+			</div>
+			<div class = "pure-u-1-8">
+				&nbsp;
+			</div>
 		</div>
 	</div>
 
@@ -66,10 +95,7 @@
 			$('.fullpage').fullpage({
 				anchors: ['whoweare', 'whatwedo', 'contacts'],
 				menu: '.menu',
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-				responsiveWidth: 1100
+				navigation: false
 			});
 		});
 	</script>
