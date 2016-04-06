@@ -1,6 +1,8 @@
 body,html
 {
+	color: #333;
 	height: 100%;
+	font-size: 16pt;
 }
 
 .pure-menu
@@ -29,10 +31,41 @@ body,html
 	bottom: 0;
 }
 
+.fright
+{
+	float: right;
+}
+
+.center
+{
+	text-align: center;
+}
+
 .left
 {
 	text-align: left;
 	position: absolute;
 	left: 0;
 	bottom: 0;
+}
+
+.contacts
+{
+	padding: 0px;
+}
+
+.contacts li
+{
+	list-style: none;
+}
+
+.contacts a
+{
+	text-decoration: none;
+	color: #333;
+}
+
+.contacts a:hover
+{
+	color: #999;
 }
