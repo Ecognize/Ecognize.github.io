@@ -97,6 +97,7 @@
 		$(document).ready(function() {
 			var ErintMenu = {};
 			ErintMenu.cur = false;
+			ErintMenu.top = 0;
 
 			$('.fullpage').fullpage({
 				anchors: ['whoweare', 'whatwedo', 'contacts'],
@@ -105,13 +106,18 @@
 				afterLoad: function(anchorLink, index) {
 					$('li[data-menuanchor=' + anchorLink + ']').addClass('pure-menu-selected').siblings().removeClass('pure-menu-selected');
 					ErintMenu.cur = anchorLink;
+					ErintMenu.top = $(window).scrollTop();
             	}
 			});
 
 			$('.pure-menu-toggle').click(function() {
+				console.log('current: ' + $(window).scrollTop());
 				$('.pure-menu').toggleClass('toggled');
+				$('.section').toggleClass('modal');
 				if( $('.pure-menu').hasClass('toggled') )
 					$.fn.fullpage.silentMoveTo(ErintMenu.cur);
+					$(window).scrollTop(ErintMenu.top);
+				console.log('now: ' + $(window).scrollTop());
 			});
 
 			$('.pure-menu-item').click(function() {
