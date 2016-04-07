@@ -23,6 +23,7 @@ h1
 
 .pure-menu
 {
+	top: 0px;
     z-index: 70;
     position: fixed;
     background-color: #fff;
