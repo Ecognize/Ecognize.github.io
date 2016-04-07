@@ -30,6 +30,14 @@
 	<script src="assets/jquery.fullPage.min.js"></script>
 	<link rel="stylesheet" href="assets/jquery.fullPage.min.css" />
 	<link rel="stylesheet" href="assets/style.css" />
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="Erint Labs" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="assets/mstile-144x144.png" />
 </head>
 <body>
 	<div class = "pure-menu pure-menu-horizontal">
@@ -97,6 +105,7 @@
 		$(document).ready(function() {
 			var ErintMenu = {};
 			ErintMenu.cur = false;
+			ErintMenu.top = 0;
 
 			$('.fullpage').fullpage({
 				anchors: ['whoweare', 'whatwedo', 'contacts'],
@@ -105,13 +114,18 @@
 				afterLoad: function(anchorLink, index) {
 					$('li[data-menuanchor=' + anchorLink + ']').addClass('pure-menu-selected').siblings().removeClass('pure-menu-selected');
 					ErintMenu.cur = anchorLink;
+					ErintMenu.top = $(window).scrollTop();
             	}
 			});
 
 			$('.pure-menu-toggle').click(function() {
+				console.log('current: ' + $(window).scrollTop());
 				$('.pure-menu').toggleClass('toggled');
+				$('.section').toggleClass('modal');
 				if( $('.pure-menu').hasClass('toggled') )
 					$.fn.fullpage.silentMoveTo(ErintMenu.cur);
+					$(window).scrollTop(ErintMenu.top);
+				console.log('now: ' + $(window).scrollTop());
 			});
 
 			$('.pure-menu-item').click(function() {

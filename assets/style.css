@@ -1,4 +1,4 @@
-body,html
+body, html
 {
 	color: #333;
 	height: 100%;
@@ -10,30 +10,9 @@ body, .pure-g [class *= "pure-u"]
 	font-family: 'Roboto', sans-serif;
 }
 
-.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited
-{
-	color: #333;
-	font-weight: bolder;
-}
-
 h1
 {
 	text-align: center;
-}
-
-.pure-menu
-{
-	top: 0px;
-    z-index: 70;
-    position: fixed;
-    background-color: #fff;
-    display: inline-block;
-    border-bottom: 1px solid #ddd;
-}
-
-.menu .active
-{
-	background-color: #eef !important;
 }
 
 .pic img
@@ -108,6 +87,22 @@ h1
 	}
 }
 
+/* menu */
+.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited
+{
+	color: #333;
+	font-weight: bolder;
+}
+
+.pure-menu, .pure-menu.toggled
+{
+	top: 0px;
+    z-index: 70;
+    position: fixed;
+    display: inline-block;
+    background-color: #fff;
+}
+
 /* responsive menu */
 .pure-menu-list
 {
@@ -162,10 +157,10 @@ h1
 .pure-menu.toggled > .pure-menu-toggle .bar
 {
 	top: 23px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .pure-menu.toggled > .pure-menu-toggle .bar:first-child
@@ -178,31 +173,46 @@ h1
 
 @media screen and (max-width: 38.75em)
 {
+	.pure-menu
+	{
+		background: none;
+	}
+
+	.toggled .pure-menu-list
+	{
+		border-bottom: 1px solid #ddd;
+	}
+
 	.pure-menu-toggle
 	{
 		display: block;
 	}
 
-	.pure-menu-horizontal .pure-menu-list
+	.pure-menu-horizontal .pure-menu-list, .pure-menu-horizontal .pure-menu-item
 	{
-		opacity:0;
-	}
-
-	.toggled .pure-menu-list, .toggled .pure-menu-item
-	{
-		opacity:1;
+		opacity: 0;
 		display: block;
 		text-align: center;
 	}
 
-	.pure-menu-heading
+	.toggled .pure-menu-list, .toggled .pure-menu-item
 	{
-		width: 95%;
-		text-align: center;
+		opacity: 1;
+		background-color: #fff;
+	}
+
+	.pure-menu-horizontal .pure-menu-heading
+	{
+		opacity: 0;
 	}
 
 	.toggled .pure-menu-heading
 	{
+		width: 100%;
+		opacity: 1;
+		padding: 0.5em 0em;
+		text-align: center;
+		background-color: #fff;
 		border-bottom: 1px solid #efefef;
 	}
 }
