@@ -33,6 +33,7 @@
 <body>
 	<div class = "pure-menu pure-menu-horizontal">
 		<a href = "/" class = "pure-menu-heading pure-menu-link">Erint Labs</a>
+		<a href = "#" class = "pure-menu-toggle"><s class = "bar"></s><s class = "bar"></s></a>
 		<ul class="pure-menu-list menu">
 			<li class = "pure-menu-item" data-menuanchor = "whoweare"><a class = "pure-menu-link" href = "#whoweare">Who we are</a></li>
 			<li class = "pure-menu-item" data-menuanchor = "whatwedo"><a class = "pure-menu-link" href = "#whatwedo">What we do</a></li>
@@ -91,11 +92,28 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			var ErintMenu = {};
+			ErintMenu.cur = false;
+
 			$('.fullpage').fullpage({
 				anchors: ['whoweare', 'whatwedo', 'contacts'],
-				menu: '.menu',
-				responsiveWidth: 400,
-				navigation: false
+				responsiveWidth: 600,
+				navigation: false,
+				afterLoad: function(anchorLink, index) {
+					$('li[data-menuanchor=' + anchorLink + ']').addClass('pure-menu-selected').siblings().removeClass('pure-menu-selected');
+					ErintMenu.cur = anchorLink;
+            	}
+			});
+
+			$('.pure-menu-toggle').click(function() {
+				$('.pure-menu').toggleClass('toggled');
+				if( $('.pure-menu').hasClass('toggled') )
+					$.fn.fullpage.silentMoveTo(ErintMenu.cur);
+			});
+
+			$('.pure-menu-item').click(function() {
+				if( $('.pure-menu').hasClass('toggled') )
+					$('.pure-menu').removeClass('toggled');
 			});
 		});
 	</script>

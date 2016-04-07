@@ -14,6 +14,9 @@ h1
 {
     z-index: 70;
     position: fixed;
+    background-color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
 }
 
 .menu .active
@@ -92,3 +95,103 @@ h1
 		margin: 0 5%;
 	}
 }
+
+/* responsive menu */
+.pure-menu-list
+{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.pure-menu-toggle
+{
+    width: 45px;
+    height: 45px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+}
+
+.pure-menu-toggle:hover
+{
+	background-color: #ddd;
+}
+
+.pure-menu-toggle .bar
+{
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 100px;
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.pure-menu-toggle .bar:first-child
+{
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.pure-menu.toggled > .pure-menu-toggle .bar
+{
+	top: 23px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.pure-menu.toggled > .pure-menu-toggle .bar:first-child
+{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 38.75em)
+{
+	.pure-menu-toggle
+	{
+		display: block;
+	}
+
+	.pure-menu-horizontal .pure-menu-list
+	{
+		opacity:0;
+	}
+
+	.toggled .pure-menu-list, .toggled .pure-menu-item
+	{
+		opacity:1;
+		display: block;
+		text-align: center;
+	}
+
+	.pure-menu-heading
+	{
+		width: 95%;
+		text-align: center;
+	}
+
+	.toggled .pure-menu-heading
+	{
+		border-bottom: 1px solid #efefef;
+	}
+}
+
