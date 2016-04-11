@@ -113,6 +113,7 @@
 				anchors: ['whoweare', 'whatwedo', 'contacts'],
 				responsiveWidth: 600,
 				navigation: false,
+				fitToSection: false,
 				afterLoad: function(anchorLink, index) {
 					$('li[data-menuanchor=' + anchorLink + ']').addClass('pure-menu-selected').siblings().removeClass('pure-menu-selected');
 					ErintMenu.cur = anchorLink;
@@ -121,18 +122,23 @@
 			});
 
 			$('.pure-menu-toggle').click(function() {
-				console.log('current: ' + $(window).scrollTop());
+				ErintMenu.top = $(window).scrollTop();
 				$('.pure-menu').toggleClass('toggled');
-				$('.section').toggleClass('modal');
 				if( $('.pure-menu').hasClass('toggled') )
 					$.fn.fullpage.silentMoveTo(ErintMenu.cur);
-					$(window).scrollTop(ErintMenu.top);
+				$(window).scrollTop(ErintMenu.top);
 				console.log('now: ' + $(window).scrollTop());
 			});
 
 			$('.pure-menu-item').click(function() {
 				if( $('.pure-menu').hasClass('toggled') )
 					$('.pure-menu').removeClass('toggled');
+			});
+
+			$(document).click(function(e) {
+				var c = $('.pure-menu');
+				if (! c.is(e.target) && c.has(e.target).length === 0 && c.hasClass('toggled') ) 
+					c.removeClass('toggled');
 			});
 		});
 	</script>
