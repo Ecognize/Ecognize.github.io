@@ -318,6 +318,9 @@ header {
 // Contact
 #contact .fa {
     color: $theme-dark;
+    &:hover {
+        color: lighten($theme-dark, 20%);
+    }
     font-size: 4em;
 }
 
