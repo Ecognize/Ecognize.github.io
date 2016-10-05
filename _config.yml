@@ -10,3 +10,27 @@ github_username: ErintLabs
 
 # Build settings
 markdown: kramdown
+
+# Setting language flags
+# https://sylvain.durand.tf/making-jekyll-multilingual/ refer to this
+defaults:
+  -
+    scope:
+      path: uk
+    values:
+      lang: uk
+  -
+    scope:
+      path: en
+    values:
+      lang: en
+  -
+    scope:
+      path: fr
+    values:
+      lang: fr
+  -
+    scope:
+      path: ru
+    values:
+      lang: ru
