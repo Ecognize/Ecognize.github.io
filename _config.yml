@@ -35,6 +35,11 @@ defaults:
     values:
       lang: ru
 
+# Candidates for removal:
+# who_we_are_head
+# page_head
+# what_we_do_head
+      
 # Translations table
 # TODO: is there a way to make it a separate file pretty please?
 # WARNING: for typographic discipline reasons, single quotation marks are NOT
@@ -42,7 +47,7 @@ defaults:
 # here you are I have a free Unicode apostrophe right for you: ’
 t:
   en:
-    page_head:          'ErintLabs — your bioinformatics partner'
+    page_head:          'Erint Labs OÜ — software + science = ❤'
     who_we_are_head:    'Who we are'
     who_we_are_txt:     'We are young distributed team, based in Ukraine, Estonia and France brought together by a vision of becoming pioneers in the emerging fields of bioinformatics, sustainable economy and clean energy.'
     what_we_do_head:    'What we can do'
@@ -71,6 +76,9 @@ t:
     company_address1:   '6 Sepapaja Str.'
     company_address2:   'Tallinn, EE-15551'
     company_address3:   'ESTONIA'
+    ukraine:            'Ukraine'
+    estonia:            'Estonia'
+    france:             'France'
   uk:
     page_head:          '~'
     who_we_are_head:    '~'
@@ -101,6 +109,9 @@ t:
     company_address1:   'вул. Сепапая, буд. 6'
     company_address2:   'м. Таллінн, EE-15551'
     company_address3:   'ЕСТОНІЯ'
+    ukraine:            'Україна'
+    estonia:            'Естонія'
+    france:             'Франція'
   fr:
     page_head:          '~'
     who_we_are_head:    '~'
@@ -131,6 +142,9 @@ t:
     company_address1:   '6 rue Sepapaja'
     company_address2:   'EE-15551 Tallinn'
     company_address3:   'ESTONIE'
+    ukraine:            'Ukraine'
+    estonia:            'Estonie'
+    france:             'France'
   ru:
     page_head:          '~'
     who_we_are_head:    '~'
@@ -161,3 +175,6 @@ t:
     company_address1:   'ул. Сепапая, д. 6'
     company_address2:   'г. Таллин, EE-15551'
     company_address3:   'ЭСТОНИЯ'
+    ukraine:            'Украина'
+    estonia:            'Эстония'
+    france:             'Франция'
