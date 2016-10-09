@@ -43,6 +43,7 @@ defaults:
 t:
   en:
     page_head:          'Erint Labs OÜ — software + science = ❤'
+    meta_description:   'Establishing the framework for affordable biofuel infrastructure. Developing the tools to disrupt the energy market and hasten the era of carbon-neutral economy. Custom bioinformatics and scientific computing solutions. Bridging the gap between science and households.'
     about_who_head:     'Who we are'
     about_who_text:     'Erint Labs is a team of science and software experts, mainly having a bioinformatics background. We see ourselves as the bricklayers and the architects for the bridge to connect unsolved problems to evergrowing computational abilities of the Internet.'
     about_what_head:    'Our goals'
@@ -81,6 +82,7 @@ t:
     france:             'Nice, France'
   uk:
     page_head:          '~'
+    meta_description:   '~'
     about_who_head:     '~'
     about_who_text:     '~'
     about_what_head:    '~'
@@ -119,6 +121,7 @@ t:
     france:             'Ніцца, Франція'
   fr:
     page_head:          'Erint Labs OÜ — logiciel + science = ❤'
+    meta_description:   '~'
     about_who_head:     'Qui nous sommes'
     about_who_text:     'Erint Labs est une équipe des experts en logiciel et science, surtout de formation bioinformatique. On se voit comme des maçons et des architects pour le pont qui devra se relier les problèmes non résolus à la capatité computationnelle croissante de l’Internet.'
     about_what_head:    'Nos buts'
@@ -159,6 +162,7 @@ t:
     france:             'Nice, France'
   ru:
     page_head:          '~'
+    meta_description:   '~'
     about_who_head:     '~'
     about_who_text:     '~'
     about_what_head:    '~'
