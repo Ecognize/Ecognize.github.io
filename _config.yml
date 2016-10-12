@@ -42,6 +42,7 @@ defaults:
 # here you are I have a free Unicode apostrophe right for you: ’
 t:
   en:
+    lang:               'English'
     page_head:          'Erint Labs OÜ — software + science = ❤'
     meta_description:   'Establishing the framework for affordable biofuel infrastructure. Developing the tools to disrupt the energy market and hasten the era of carbon-neutral economy. Custom bioinformatics and scientific computing solutions. Bridging the gap between science and households.'
     about_who_head:     'Who we are'
@@ -81,6 +82,7 @@ t:
     estonia:            'Tallinn, Estonia'
     france:             'Nice, France'
   uk:
+    lang:               'Українська'
     page_head:          '~'
     meta_description:   '~'
     about_who_head:     '~'
@@ -120,6 +122,7 @@ t:
     estonia:            'Таллінн, Естонія'
     france:             'Ніцца, Франція'
   fr:
+    lang:               'Français'
     page_head:          'Erint Labs OÜ — logiciel + science = ❤'
     meta_description:   'Établir le cardre pour l’infrastructure des bio-carburants abordable. Mettre au point des outils à perturber le marché d’energie et accélérer l’ère de l’économie neutre en carbone. Solutions bioinformatiques et du calcul scientifique personnalisées. Combler le fosse entre la science et les ménages.'
     about_who_head:     'Qui nous sommes'
@@ -161,6 +164,7 @@ t:
     estonia:            'Tallinn, Estonie'
     france:             'Nice, France'
   ru:
+    lang:               'Русский'
     page_head:          '~'
     meta_description:   '~'
     about_who_head:     '~'
