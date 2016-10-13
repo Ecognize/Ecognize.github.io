@@ -17,6 +17,8 @@
                 <li>
                     <!--@lyssdod style this pls -->
                     <!--@landswellsong TODO: cut code and adapt it for erint.science -->
+                    <!--Language Icon by A’ Design Award & Competition, Onur Müştak Çobanlı and Farhat Datta-->
+                    <!--http://www.languageicon.org -->
                     <a class="page-scroll" href="#"><img height=24 src="/img/language_switch.svg"/>
                       <select onchange="document.location.href = '/' + this.value">{% for l in site.t %}
                         <option value="{{ l[0] }}"{% if page.lang == l[0] %} selected{% endif %}>{{ l[1].lang }}</option>{% endfor %}
