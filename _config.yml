@@ -152,7 +152,7 @@ t:
     ui_team:            'Équipe'
     ui_contact:         'Contact'
     service_head:       'Notre Accent de Recherche'
-    # TODO: No short way to replicate original, study how much space we have 
+    # TODO: No short way to replicate original, study how much space we have
     service_it_head:    'Logiciel en Science'
     service_it_txt:     'Le monde scientifique produce couramment plus des données qu’un homme est en mesure d’interpréter dans sa tête donc il y la demande pour les developeurs multi-disciplinaires qui soulageraient le casse-tête inhérent à l’explication de la recherche à un ordinateur.'
     service_lab_head:   'Laboratoire sur Mesure'
