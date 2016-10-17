@@ -2,23 +2,23 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-left">
-                <h3 class="section-heading">{{ site.t[page.lang].about_who_head }}</h3>
-                <p class="text-faded">{{ site.t[page.lang].about_who_text }}</p>
-                
-                <h3 class="section-heading">{{ site.t[page.lang].about_what_head }}</h3>
-                <p class="text-faded">{{ site.t[page.lang].about_what_text }}</p>
-                
-                <h3 class="section-heading">{{ site.t[page.lang].about_how_head }}</h3>
-                <p class="text-faded">{{ site.t[page.lang].about_how_text }}</p>
-                
-                <h3 class="section-heading">{{ site.t[page.lang].about_where_head }}</h3>
-                <p class="text-faded">{{ site.t[page.lang].about_where_text }}</p>
+                <h3 class="section-heading">{% include t.html s='about_who_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_who_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_what_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_what_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_how_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_how_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_where_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_where_text' %}</p>
                 <ul> <!--TODO @lyssdod prettify this style here pls-->
-                  <li>🇺🇦 {{ site.t[page.lang].ukraine }}</li>
-                  <li>🇪🇪 {{ site.t[page.lang].estonia }}</li>
-                  <li>🇫🇷 {{ site.t[page.lang].france }}</li>
+                  <li>🇺🇦 {% include t.html s='ukraine' %}</li>
+                  <li>🇪🇪 {% include t.html s='estonia' %}</li>
+                  <li>🇫🇷 {% include t.html s='france' %}</li>
                 </ul>
-                <a href="#services" class="btn btn-default btn-xl">{{ site.t[page.lang].what_we_do_head }}</a>
+                <a href="#services" class="btn btn-default btn-xl">{% include t.html s='what_we_do_head' %}</a>
             </div>
         </div>
     </div>

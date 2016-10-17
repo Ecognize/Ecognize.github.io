@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{{ site.t[page.lang].service_head }}</h2>
+                <h2 class="section-heading">{% include t.html s='service_head' %}</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -12,29 +12,29 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-code wow bounceIn text-primary"></i>
-                    <h3>{{ site.t[page.lang].service_it_head }}</h3>
-                    <p class="text-muted">{{ site.t[page.lang].service_it_txt }}</p>
+                    <h3>{% include t.html s='service_it_head' %}</h3>
+                    <p class="text-muted">{% include t.html s='service_it_txt' %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-flask wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>{{ site.t[page.lang].service_lab_head }}</h3>
-                    <p class="text-muted">{{ site.t[page.lang].service_lab_txt }}</p>
+                    <h3>{% include t.html s='service_lab_head' %}</h3>
+                    <p class="text-muted">{% include t.html s='service_lab_txt' %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-gear wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>{{ site.t[page.lang].service_auto_head }}</h3>
-                    <p class="text-muted">{{ site.t[page.lang].service_auto_txt }}</p>
+                    <h3>{% include t.html s='service_auto_head' %}</h3>
+                    <p class="text-muted">{% include t.html s='service_auto_txt' %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-leaf wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>{{ site.t[page.lang].service_pbr_head }}</h3>
-                    <p class="text-muted">{{ site.t[page.lang].service_pbr_txt }}</p>
+                    <h3>{% include t.html s='service_pbr_head' %}</h3>
+                    <p class="text-muted">{% include t.html s='service_pbr_txt' %}</p>
                 </div>
             </div>
         </div>

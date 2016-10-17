@@ -1,11 +1,11 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="../img/logo.png" width="100" height="100" alt="{{ site.t[page.lang].logo_alt }}" />
+            <img src="../img/logo.png" width="100" height="100" alt="{% include t.html s='logo_alt' %}" />
             <h1>ERINT LABS OÜ</h1>
             <hr>
-            <p>{{ site.t[page.lang].big_head }}</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ site.t[page.lang].ui_more_info }}</a>
+            <p>{% include t.html s='big_head' %}</p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">{% include t.html s='ui_more_info' %}</a>
         </div>
     </div>
 </header>

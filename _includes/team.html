@@ -2,8 +2,8 @@
   <aside class="bg-dark">
       <div class="container text-center">
           <div class="our-team">
-              <h2>{{ site.t[page.lang].team_head }}</h2>
-              <a href="#" class="btn btn-default btn-xl wow tada">{{ site.t[page.lang].team_txt }}</a>
+              <h2>{% include t.html s='team_head' %}</h2>
+              <a href="#" class="btn btn-default btn-xl wow tada">{% include t.html s='team_txt' %}</a>
           </div>
       </div>
   </aside>

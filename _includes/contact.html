@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">{{ site.t[page.lang].contact_head }}</h2>
+                <h2 class="section-heading">{% include t.html s='contact_head' %}</h2>
                 <hr class="primary">
-                <p>{{ site.t[page.lang].contact_txt }}</p>
+                <p>{% include t.html s='contact_txt' %}</p>
             </div>
         <div class="col-lg-2 col-lg-offset-2 text-center">
             <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
@@ -22,10 +22,10 @@
             </a>
         </div>
         <div class="col-lg-8 col-lg-offset-2 text-center"> <!--TODO @lyssdod pls make some style here -->
-          <p>{{ site.t[page.lang].company_name_code }}<br/>
-          {{ site.t[page.lang].company_address1 }}</br>
-          {{ site.t[page.lang].company_address2 }}</br>
-          {{ site.t[page.lang].company_address3 }}</br>
+          <p>{% include t.html s='company_name_code' %}<br/>
+          {% include t.html s='company_address1' %}</br>
+          {% include t.html s='company_address2' %}</br>
+          {% include t.html s='company_address3' %}</br>
           </p>
         </div>
     </div>

@@ -3,7 +3,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">{{ site.t[page.lang].ui_nav_toggle }}</span>
+                <span class="sr-only">{% include t.html s='ui_nav_toggle' %}</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -15,27 +15,21 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <!--@lyssdod style this pls -->
-                    <!--@landswellsong TODO: cut code and adapt it for erint.science -->
-                    <!--Language Icon by A’ Design Award & Competition, Onur Müştak Çobanlı and Farhat Datta-->
-                    <!--http://www.languageicon.org -->
-                    <a class="page-scroll" href="#"><img height=24 src="/img/language_switch.svg"/>
-                      <select onchange="document.location.href = '/' + this.value">{% for l in site.t %}
-                        <option value="{{ l[0] }}"{% if page.lang == l[0] %} selected{% endif %}>{{ l[1].lang }}</option>{% endfor %}
-                      </select>
+                    <a class="page-scroll" href="#">
+                      {% include langbox.html %}
                     </a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">{{ site.t[page.lang].ui_about }}</a>
+                    <a class="page-scroll" href="#about">{% include t.html s='ui_about' %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">{{ site.t[page.lang].ui_services }}</a>
+                    <a class="page-scroll" href="#services">{% include t.html s='ui_services' %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#ourteam">{{ site.t[page.lang].ui_team }}</a>
+                    <a class="page-scroll" href="#ourteam">{% include t.html s='ui_team' %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">{{ site.t[page.lang].ui_contact }}</a>
+                    <a class="page-scroll" href="#contact">{% include t.html s='ui_contact' %}</a>
                 </li>
             </ul>
         </div>
