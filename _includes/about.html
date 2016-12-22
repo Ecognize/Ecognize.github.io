@@ -1,11 +1,24 @@
 <section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Who we are</h2>
-                <hr class="light">
-                <p class="text-faded">We are young distributed team, based in Ukraine, Estonia and France brought together by a vision of becoming pioneers in the emerging fields of bioinformatics, sustainable economy and clean energy.</p>
-                <a href="#services" class="btn btn-default btn-xl">What we can do</a>
+            <div class="col-lg-8 col-lg-offset-2 text-left">
+                <h3 class="section-heading">{% include t.html s='about_who_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_who_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_what_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_what_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_how_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_how_text' %}</p>
+
+                <h3 class="section-heading">{% include t.html s='about_where_head' %}</h3>
+                <p class="text-faded">{% include t.html s='about_where_text' %}</p>
+                <ul> <!--TODO @lyssdod prettify this style here pls-->
+                  <li>🇺🇦 {% include t.html s='ukraine' %}</li>
+                  <li>🇪🇪 {% include t.html s='estonia' %}</li>
+                  <li>🇫🇷 {% include t.html s='france' %}</li>
+                </ul>
+                <a href="#services" class="btn btn-default btn-xl">{% include t.html s='what_we_do_head' %}</a>
             </div>
         </div>
     </div>

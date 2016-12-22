@@ -3,7 +3,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">{% include t.html s='ui_nav_toggle' %}</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -15,16 +15,21 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#">
+                      {% include langbox.html %}
+                    </a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#about">{% include t.html s='ui_about' %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#ourteam">Our team</a>
+                    <a class="page-scroll" href="#services">{% include t.html s='ui_services' %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#ourteam">{% include t.html s='ui_team' %}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">{% include t.html s='ui_contact' %}</a>
                 </li>
             </ul>
         </div>

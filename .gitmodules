@@ -1,0 +1,3 @@
+[submodule "jekyll-trans"]
+	path = _includes/jekyll-trans
+	url = https://github.com/ErintLabs/jekyll-trans.git

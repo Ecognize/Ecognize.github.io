@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <h2 class="section-heading">{% include t.html s='contact_head' %}</h2>
                 <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p>{% include t.html s='contact_txt' %}</p>
             </div>
         <div class="col-lg-2 col-lg-offset-2 text-center">
             <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
@@ -21,6 +21,12 @@
             <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
             </a>
         </div>
-
+        <div class="col-lg-8 col-lg-offset-2 text-center"> <!--TODO @lyssdod pls make some style here -->
+          <p>{% include t.html s='company_name_code' %}<br/>
+          {% include t.html s='company_address1' %}</br>
+          {% include t.html s='company_address2' %}</br>
+          {% include t.html s='company_address3' %}</br>
+          </p>
+        </div>
     </div>
 </section>

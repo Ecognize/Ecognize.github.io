@@ -10,3 +10,209 @@ github_username: ErintLabs
 
 # Build settings
 markdown: kramdown
+
+# Setting language flags
+# https://sylvain.durand.tf/making-jekyll-multilingual/ refer to this
+defaults:
+  -
+    scope:
+      path: uk
+    values:
+      lang: uk
+  -
+    scope:
+      path: en
+    values:
+      lang: en
+  -
+    scope:
+      path: fr
+    values:
+      lang: fr
+  -
+    scope:
+      path: ru
+    values:
+      lang: ru
+
+# Translations table
+# TODO: is there a way to make it a separate file pretty please?
+# WARNING: for typographic discipline reasons, single quotation marks are NOT
+# to be used like apostrophes. If your keyboard lacks the respective glyph,
+# here you are I have a free Unicode apostrophe right for you: ’
+t:
+  en:
+    lang:               'English'
+    page_head:          'Erint Labs OÜ — software + science = ❤'
+    meta_description:   'Establishing the framework for affordable biofuel infrastructure. Developing the tools to disrupt the energy market and hasten the era of carbon-neutral economy. Custom bioinformatics and scientific computing solutions. Bridging the gap between science and households.'
+    about_who_head:     'Who we are'
+    about_who_text:     'Erint Labs is a team of science and software experts, mainly having a bioinformatics background. We see ourselves as the bricklayers and the architects for the bridge to connect unsolved problems to evergrowing computational abilities of the Internet.'
+    about_what_head:    'Our goals'
+    about_what_text:    'We are brought together by a vision of becoming the pioneers in the novel fields where science, economy and administration all face a dire need of software expertise. We think the world would make good use of more computer ingenuity applied to both emerging and unorthodox areas.'
+    about_how_head:     'Our culture'
+    about_how_text:     'We strongly believe in Open Source and the post-industrial decentralisation of production and research.'
+    about_where_head:   'Our locations'
+    about_where_text:   'We are delocalised like an electron, but are mostly affiliated with the following locations:'
+    what_we_do_head:    'Our past projects'
+    contact_head:       'Let’s Get In Touch!'
+    contact_txt:        'Are you puzzled with an issue that needs computational cracking? Do you have an interesting project you would love to outsource? Don’t hesitate to contact us:'
+    logo_alt:           'ErintLabs Logo'
+    ui_more_info:       'Find Out More'
+    ui_nav_toggle:      'Toggle navigation'
+    ui_about:           'About'
+    ui_services:        'Services'
+    ui_team:            'Our team'
+    ui_contact:         'Contact'
+    service_head:       'Our Research Focus'
+    service_it_head:    'Code meets Science'
+    service_it_txt:     'The scientific world routinely produces more data than a human being is able to interpret in their head, creating a demand for multi-disciplinary developers who would relieve the headache of explaining one’s research to a computer.'
+    service_lab_head:   'Custom Lab Equipment'
+    service_lab_txt:    'What if a spectral analyser didn’t cost a fortune? Would you like to produce your own pippettes from recycled sources? How about fitting the equipment to your needs and taste instead of adapting to the gear’s own limitations?'
+    service_auto_head:  'Internet of Efficiency'
+    service_auto_txt:   'A surprising amount of organisations, governments and individuals around would accomplish more throughput while cutting a huge deal of waste should their activities use more tools that modern computer science ecosystem has to offer.'
+    service_pbr_head:   'Photo-Bio-Reactors'
+    service_pbr_txt:    'When encased in isolated modular cubicles and put to work, the tiny algae have shown a great promise to help the world get off fossil fuel needle, sequester greenhouse gases from the atmosphere and encourage localisation of energy production.'
+    team_head:          'Get to know'
+    team_txt:           'our team'
+    company_name_code:  'Erint Labs OÜ, 14034333'
+    company_address1:   '6 Sepapaja Str.'
+    company_address2:   'Tallinn, EE-15551'
+    company_address3:   'ESTONIA'
+    ukraine:            'Kyiv, Ukraine'
+    estonia:            'Tallinn, Estonia'
+    france:             'Nice, France'
+    cookie_banner:      'Given the EU directive 2002/58/EC on the protection of privacy in the electronic communications sector, we are hereby obliged to ask your permission to install a cookie which would help us remember your preference. If you say yes to this prompt, your language choice will be saved on the current browser. Otherwise we won’t be asking this again until this session ends.'
+  uk:
+    lang:               'Українська'
+    page_head:          'Erint Labs OÜ — програмне забезпечення + наука = ❤'
+    meta_description:   'Створюємо фундамент для бюджетної біопаливної інфраструктури. Розробляємо інструменти для запуску змін на енергетичному ринку та прискорення розвитоку незалежної від вуглеводнів економіки. Персоналізовані біоінформатичні та обчислювальні рішення для науки. Зменшуємо розрив між наукою та домогосподарствами.'
+    # have no options for 'carbon-neutral economy'
+    about_who_head:     'Хто ми'
+    about_who_text:     'Erint Labs — це команда науковців та програмістів з переважно біонформатичним досвідом. Ми бачимо себе архітекторами та каменярами мосту між невирішеними проблемами та зростаючими обчислювальними можливостями інтернету.'
+    about_what_head:    'Наші цілі'
+    about_what_text:    'Нас об’єднало бажання стати першовідкривачами у новітніх галузях, де наука, економіка та управління не можуть обійтися без програмного забезпечення. Ми вважаємо, що світ би виграв від застосування комп’ютерної майстерності у нових та нетрадиційних галузях.'
+    about_how_head:     'Наша культура'
+    about_how_text:     'Ми глибоко віримо у Open Source, а також постіндустріальну децентралізацію виробництва та досліджень.'
+    about_where_head:   'Де ми знаходимось'
+    about_where_text:   'Ми делокалізовані як електрони, проте, переважно прив’язані до:'
+    # electron or electronS?
+    what_we_do_head:    'Наші попередні проекти'
+    contact_head:       'Лишаймося на зв’язку!'
+    contact_txt:        'Ви спантеличенні проблемою, яка потребує обчислювальних рішень? Маєте цікавий проект, для якого Вам потрібен виконавець? Зв’яжіться з нами:'
+    # have no idea how to translate 'cracking'
+    logo_alt:           'лого Erint Labs'
+    #ErintLabs in source
+    ui_more_info:       'Дізнатися більше'
+    ui_nav_toggle:      'Навігація вкл/викл'
+    ui_about:           'Про нас'
+    ui_services:        'Послуги'
+    ui_team:            'Наша команда'
+    ui_contact:         'Зв’язатися'
+    service_head:       'Наші наукові інтереси'
+    service_it_head:    'Код та наука'
+    service_it_txt:     'Науковий світ щоденно створює більше даних, ніж людина здатна інтерпретувати в своїй голові, створюючи попит на багатопрофільних інженерів, котрі здатні вгамувати головний біль залучаючи комп’ютерні технології.'
+    service_lab_head:   'Лабораторне обладнання на замовлення'
+    service_lab_txt:    'Що якби спекртральний аналізатор не коштував цілого статку? Бажаєте виготовляти власні піпетки з перероблених матеріалів? Як щодо підгонки Вашого обладнання до Ваших потреб та смаку, замість того, щоб пристосовуватися до обмежень стандартного?'
+    # I dislike this description. We should rewrite it.
+    service_auto_head:  'Інтернет ефективності'
+    # what?)))
+    service_auto_txt:   'Вражаюча кількість організацій, урядів та людей у світі підвищують продуктивність зменшуючи кількість непотрібної роботи, якщо починають використовувати інструменти, які сучасна комп’ютерна наука може запропонувати.'
+    # we need to rewrite this one w/o 'ecosystem'
+    service_pbr_head:   'Фотобіореактори'
+    service_pbr_txt:    'Заточені у ізольвані системи та задіяні, тендітні водорості вселили велику надію на те, що допоможуть світу злізти з голки використання викопного палива, зменшити кількість парникових газів в атмосфері та стимулувати виробку енергії на місцях.'
+    # not sure about 'localisation' and 'modular cubicles and put to work"
+    team_head:          'Знайомтеся'
+    team_txt:           'наша команда'
+    company_name_code:  'ТОВ «Erint Labs OÜ», 14034333'
+    company_address1:   'вул. Сепапая, буд. 6'
+    company_address2:   'м. Таллінн, EE-15551'
+    company_address3:   'ЕСТОНІЯ'
+    ukraine:            'Київ, Україна'
+    estonia:            'Таллінн, Естонія'
+    france:             'Ніцца, Франція'
+    # @whokilled pls proofread
+    cookie_banner:      'Через директиву ЕУ 2002/58/EC щодо захисту особистого життя у галузі електронних комунікацій, нам потрібно отримати ваш дозвіл на встановлення «тістечка» (cookie), яке б нам допомогло запам’ятати ваш вибір. Якщо ви натиснете так, ми запам’ятаємо обрану вами мову на поточному брозуері. В іншому випадку ми не будемо перепитувати до кінця поточної сесії.'
+  fr:
+    lang:               'Français'
+    page_head:          'Erint Labs OÜ — logiciel + science = ❤'
+    meta_description:   'Établir le cardre pour l’infrastructure des bio-carburants abordable. Mettre au point des outils à perturber le marché d’energie et accélérer l’ère de l’économie neutre en carbone. Solutions bioinformatiques et du calcul scientifique personnalisées. Combler le fosse entre la science et les ménages.'
+    about_who_head:     'Qui nous sommes'
+    about_who_text:     'Erint Labs est une équipe des experts en logiciel et science, surtout de formation bioinformatique. On se voit comme des maçons et des architects pour le pont qui devra se relier les problèmes non résolus à la capatité computationnelle croissante de l’Internet.'
+    about_what_head:    'Nos buts'
+    about_what_text:    'On est réuni par une vision, soît devenir les pionniers dans les domains nouveaux où la science, l’écomonie et l’administration tous sont confrontés à un besoin pressant de l’expertise en logiciel. On pense que le monde ferait bon usage de plus d’ingéniosité en informatique appliquée aussi bien dans les matières émergentes que les non orthodoxes.'
+    about_how_head:     'Notre culture'
+    about_how_text:     'Nous croyons fortement en Open Source et la décentralisation post-industrielle de la production et de la recherche.'
+    about_where_head:   'Nos lieux'
+    about_where_text:   'Nous sommes délocalisés comme un électron, mais plutôt on est affilié avec les lieux suivants:'
+    what_we_do_head:    'Nos projets antérieurs'
+    contact_head:       'Restons en contact!'
+    contact_txt:        'Êtes-vous perplexe avec un problème qu’il faut résoudre avec calcul? Avez-vous un projet intéressant que vous voudriez impartir? N’hesitez pas de nous contacter:'
+    logo_alt:           'Logo d’Erint Labs'
+    ui_more_info:       'En savoir plus'
+    ui_nav_toggle:      'Basculer la navigation'
+    ui_about:           'À propos'
+    ui_services:        'Services'
+    ui_team:            'Équipe'
+    ui_contact:         'Contact'
+    service_head:       'Notre Accent de Recherche'
+    # TODO: No short way to replicate original, study how much space we have
+    service_it_head:    'Logiciel en Science'
+    service_it_txt:     'Le monde scientifique produce couramment plus des données qu’un homme est en mesure d’interpréter dans sa tête donc il y la demande pour les developeurs multi-disciplinaires qui soulageraient le casse-tête inhérent à l’explication de la recherche à un ordinateur.'
+    service_lab_head:   'Laboratoire sur Mesure'
+    # Sentences reordered for greater justice because I can't find a "what if" equivalent that doesn't start from "ou" or "et"
+    service_lab_txt:    'Souhaitez-vous fabriquer votre propres pipettes à partir de matériaux recyclés? Et si un analyseur spectrale ne coûtait pas une fortune? Pourquoi n’ajuster le matériel à vos besoins et vos goûts au lieu de se adapter pour les limites d’équipment vous-mêmes?'
+    service_auto_head:  'Internet d’Efficacité'
+    service_auto_txt:   'Il est étonnant combien il y a des organisations, gouvernements et individus qui pourraient accomplir plus en réduisant beaucoup des gaspillages si leurs activites utilisaient plus des moyens moderns que l’écosysteme informatique a à offrir.'
+    service_pbr_head:   'Photo-Bio-Reacteurs'
+    service_pbr_txt:    'Encastrées dans les cabines modulaires isolées et mis au travail, les petites algues sont grands prometteurs pour aider le monde à renoncer aux carburants fossiles, à séquestrer les gaz à effet de serre et à inciter la production localisée d’énergie.'
+    team_head:          'Rencontrez'
+    team_txt:           'notre équipe'
+    company_name_code:  'Erint Labs OÜ, 14034333'
+    company_address1:   '6 rue Sepapaja'
+    company_address2:   'EE-15551 Tallinn'
+    company_address3:   'ESTONIE'
+    ukraine:            'Kiev, Ukraine'
+    estonia:            'Tallinn, Estonie'
+    france:             'Nice, France'
+    cookie_banner:      'Selon la directive 2002/58/EC de l’EU sur la protection de la vie privée dans le secteur des communications électroniques, nous devons obtenir votre permisson pour implanter un cookie pour que nous puissons nous souvenir votre préférence. Si vous choissises oui, votre selection de la langue sera enregistrée sur ce navigateur. Sinon, on ne vous le demandera plus avant la fin de cette session..'
+  ru:
+    lang:               'Русский'
+    page_head:          'Erint Labs OÜ — программное обеспечение + наука = ❤'
+    meta_description:   'Создаем фундамент для бюджетной биотопливной инфраструктуры. Разрабатываем инструменты для запуска изменений на энергетическом рынке и ускорения развития независимой от углеводородов экономики. Персонализированные биоининформатические и вычислительные решения для науки. Уменьшаем разрыв между наукой и домохозяйствами.'
+    about_who_head:     'Кто мы'
+    about_who_text:     'Erint Labs — это команда ученых и программистов с преимущественно биоинформатическим опытом. Мы видим себя архитекторами и каменщиками моста между нерешенными проблемами и возрастающими вычислительными возможностями интернета.'
+    about_what_head:    'Наши цели'
+    about_what_text:    'Нас объединило желание стать первопроходцами в новейших областях, где наука, экономика и управления не могут обойтись без программного обеспечения. Мы считаем, что мир бы выиграл от применения компьютерного мастерства в новых и нетрадиционных отраслях.'
+    about_how_head:     'Наша культура'
+    about_how_text:     'Мы глубоко верим в Open Source, а также в постиндустриальную децентрализацию производства и исследований.'
+    about_where_head:   'Где мы находимся'
+    about_where_text:   'Мы делокализованы как электроны, но преимущественно привязаны к:'
+    what_we_do_head:    'Наши предыдущие проекты'
+    contact_head:       'Будем на связи!'
+    contact_txt:        'Вы озадачены проблемой, которая требует вычислительных решений? Есть интересный проект, для которого Вам нужен исполнитель? Свяжитесь с нами:'
+    logo_alt:           'лого Erint Labs'
+    ui_more_info:       'Узнать больше'
+    ui_nav_toggle:      'Навигация вкл/выкл'
+    ui_about:           'Про нас'
+    ui_services:        'Услуги'
+    ui_team:            'Наша команда'
+    ui_contact:         'Связаться'
+    service_head:       'Наши научные интересы'
+    service_it_head:    'Код и наука'
+    service_it_txt:     'Ежедневно научный мир создает больше данных, чем человек способен интерпретировать в своей голове, создавая спрос на многопрофильных инженеров, которые способны унять головную боль привлекая компьютерные технологии.'
+    service_lab_head:   'Лабораторное оборудование на заказ'
+    service_lab_txt:    'то если спектральный анализатор не стоил бы целое состояние? Хотите производить собственные пипетки из вторсырья? Как насчет подгонки Вашего оборудования под Ваши потребности, вместо того, чтобы приспосабливаться к ограничениям стандартного?'
+    service_auto_head:  'Интернет эффективности'
+    service_auto_txt:   'Впечатляющее количество организаций, правительств и людей в мире повышают продуктивность сводя на нет количество ненужной работы, если начинают использовать инструменты, которые может предложить современна компьютерная наука.'
+    service_pbr_head:   'Фотобиореакторы'
+    service_pbr_txt:    'Заточенные в изолированные системы и задействованные, крошечные водоросли вселили большую надежду на то, что помогут миру слезть с иголки использования ископаемого топлива, уменьшить количество парниковых газов в атмосфере и стимулировать выработку энергии на местах.'
+    team_head:          'Знакомьтесь'
+    team_txt:           'наша команда'
+    company_name_code:  'ООО «Erint Labs OÜ», 14034333'
+    company_address1:   'ул. Сепапая, д. 6'
+    company_address2:   'г. Таллин, EE-15551'
+    company_address3:   'ЭСТОНИЯ'
+    ukraine:            'Киев, Украина'
+    estonia:            'Таллин, Эстония'
+    france:             'Ницца, Франция'
+    cookie_banner:      'Ввиду директивы ЕУ 2002/58/EC о защите личной жизни в области электронных коммуникаций, мы вынуждены получить Ваше разрешение на установление куки (ookie), которое поможет нам запомнить Ваш выбор. Если Вы нажмете "да", мы запомним выбранный Вами язык на текущем броузере. В противном случае мы не будем переспрашивать до конца текущей сессии.'
