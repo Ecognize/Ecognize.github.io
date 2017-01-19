@@ -43,7 +43,7 @@ defaults:
 t:
   en:
     lang:               'English'
-    page_head:          'software + science = Erint Labs OÜ'
+    page_head:          'Software + Science = Erint Labs OÜ'
     meta_description:   'Establishing the framework for affordable biofuel infrastructure. Developing the tools to disrupt the energy market and hasten the era of carbon-neutral economy. Custom bioinformatics and scientific computing solutions. Bridging the gap between science and households.'
     about_who_head:     'Who we are'
     about_who_text:     'Erint Labs is a team of science and software experts, mainly having a bioinformatics background. We see ourselves as the bricklayers and the architects for the bridge to connect unsolved problems to evergrowing computational abilities of the Internet.'
@@ -85,7 +85,7 @@ t:
     cookie_banner:      'Given the EU directive 2002/58/EC on the protection of privacy in the electronic communications sector, we are hereby obliged to ask your permission to install a cookie which would help us remember your preference. If you say yes to this prompt, your language choice will be saved on the current browser. Otherwise we won’t be asking this again until this session ends.'
   uk:
     lang:               'Українська'
-    page_head:          'програмне забезпечення + наука = Erint Labs OÜ'
+    page_head:          'Програмне Забезпечення + Наука = Erint Labs OÜ'
     meta_description:   'Створюємо фундамент для бюджетної біопаливної інфраструктури. Розробляємо інструменти для запуску змін на енергетичному ринку та прискорення розвитоку незалежної від вуглеводнів економіки. Персоналізовані біоінформатичні та обчислювальні рішення для науки. Зменшуємо розрив між наукою та домогосподарствами.'
     # have no options for 'carbon-neutral economy'
     about_who_head:     'Хто ми'
@@ -136,7 +136,7 @@ t:
     cookie_banner:      'Через директиву ЕУ 2002/58/EC щодо захисту особистого життя у галузі електронних комунікацій, нам потрібно отримати ваш дозвіл на встановлення «тістечка» (cookie), яке б нам допомогло запам’ятати ваш вибір. Якщо ви натиснете так, ми запам’ятаємо обрану вами мову на поточному брозуері. В іншому випадку ми не будемо перепитувати до кінця поточної сесії.'
   fr:
     lang:               'Français'
-    page_head:          'logiciel + science = Erint Labs OÜ'
+    page_head:          'Logiciel + Science = Erint Labs OÜ'
     meta_description:   'Établir le cardre pour l’infrastructure des bio-carburants abordable. Mettre au point des outils à perturber le marché d’energie et accélérer l’ère de l’économie neutre en carbone. Solutions bioinformatiques et du calcul scientifique personnalisées. Combler le fosse entre la science et les ménages.'
     about_who_head:     'Qui nous sommes'
     about_who_text:     'Erint Labs est une équipe des experts en logiciel et science, surtout de formation bioinformatique. On se voit comme des maçons et des architects pour le pont qui devra se relier les problèmes non résolus à la capatité computationnelle croissante de l’Internet.'
@@ -180,7 +180,7 @@ t:
     cookie_banner:      'Selon la directive 2002/58/EC de l’EU sur la protection de la vie privée dans le secteur des communications électroniques, nous devons obtenir votre permisson pour implanter un cookie pour que nous puissons nous souvenir votre préférence. Si vous choissises oui, votre selection de la langue sera enregistrée sur ce navigateur. Sinon, on ne vous le demandera plus avant la fin de cette session..'
   ru:
     lang:               'Русский'
-    page_head:          'программное обеспечение + наука = Erint Labs OÜ'
+    page_head:          'Программное Обеспечение + Наука = Erint Labs OÜ'
     meta_description:   'Создаем фундамент для бюджетной биотопливной инфраструктуры. Разрабатываем инструменты для запуска изменений на энергетическом рынке и ускорения развития независимой от углеводородов экономики. Персонализированные биоининформатические и вычислительные решения для науки. Уменьшаем разрыв между наукой и домохозяйствами.'
     about_who_head:     'Кто мы'
     about_who_text:     'Erint Labs — это команда ученых и программистов с преимущественно биоинформатическим опытом. Мы видим себя архитекторами и каменщиками моста между нерешенными проблемами и возрастающими вычислительными возможностями интернета.'
