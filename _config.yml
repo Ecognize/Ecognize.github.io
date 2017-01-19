@@ -81,6 +81,7 @@ t:
     ukraine:            'Kyiv, Ukraine'
     estonia:            'Tallinn, Estonia'
     france:             'Nice, France'
+    crimea:             'Sevastopol, Ukraine'
     cookie_banner:      'Given the EU directive 2002/58/EC on the protection of privacy in the electronic communications sector, we are hereby obliged to ask your permission to install a cookie which would help us remember your preference. If you say yes to this prompt, your language choice will be saved on the current browser. Otherwise we won’t be asking this again until this session ends.'
   uk:
     lang:               'Українська'
@@ -130,6 +131,7 @@ t:
     ukraine:            'Київ, Україна'
     estonia:            'Таллінн, Естонія'
     france:             'Ніцца, Франція'
+    crimea:             'Севастополь, Україна'
     # @whokilled pls proofread
     cookie_banner:      'Через директиву ЕУ 2002/58/EC щодо захисту особистого життя у галузі електронних комунікацій, нам потрібно отримати ваш дозвіл на встановлення «тістечка» (cookie), яке б нам допомогло запам’ятати ваш вибір. Якщо ви натиснете так, ми запам’ятаємо обрану вами мову на поточному брозуері. В іншому випадку ми не будемо перепитувати до кінця поточної сесії.'
   fr:
@@ -174,6 +176,7 @@ t:
     ukraine:            'Kiev, Ukraine'
     estonia:            'Tallinn, Estonie'
     france:             'Nice, France'
+    crimea:             'Sébastopol, Ukraine'
     cookie_banner:      'Selon la directive 2002/58/EC de l’EU sur la protection de la vie privée dans le secteur des communications électroniques, nous devons obtenir votre permisson pour implanter un cookie pour que nous puissons nous souvenir votre préférence. Si vous choissises oui, votre selection de la langue sera enregistrée sur ce navigateur. Sinon, on ne vous le demandera plus avant la fin de cette session..'
   ru:
     lang:               'Русский'
@@ -215,4 +218,5 @@ t:
     ukraine:            'Киев, Украина'
     estonia:            'Таллин, Эстония'
     france:             'Ницца, Франция'
+    crimea:             'Севастополь, Украина'
     cookie_banner:      'Ввиду директивы ЕУ 2002/58/EC о защите личной жизни в области электронных коммуникаций, мы вынуждены получить Ваше разрешение на установление куки (cookie), которое поможет нам запомнить Ваш выбор. Если Вы нажмете "да", мы запомним выбранный Вами язык на текущем броузере. В противном случае мы не будем переспрашивать до конца текущей сессии.'
