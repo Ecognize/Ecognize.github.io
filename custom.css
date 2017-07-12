@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,200,800&subset=latin,cyrillic,latin-ext);
+
+a {color: #fff;}
+a:hover {color: #fff;}
+
+::-moz-selection { /* Code for Firefox */
+    color: #013533;
+    background: #f8f54b;
+}
+
+::selection {
+    color: #013533; 
+    background: #f8f54b;
+}
+
+/* Secret <a> for clickable divs */
+a.filldiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* Outer container for sliding gallery */
+.gallery {
+  height: 250px;
+  width: 375px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Prevents the text from being glued to the edge */
+.indentblock {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+/* Sliding div to move the image out of sight */
+div.gallerySlide {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform .2s ease-in-out;
+}
+  
+div.gallerySlide:hover {
+    transform: translate3d(0px, -250px, 0px);
+}
+
+
+/* Outline for media/workshops */
+/*a.outlined {
+    color: black;
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+a.outlined:hover {
+    color: black;
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}*/
+
+
+
+
