@@ -34,6 +34,7 @@ a.filldiv {
   padding-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+  margin: 15px;
 }
 
 /* Prevents the text from being glued to the edge */
