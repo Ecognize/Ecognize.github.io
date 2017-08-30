@@ -7,35 +7,24 @@
         </div>
 
         <div class="row">
-            <div class="col-md-3">
-                <img alt="Anna's Photo" class="center-block img-circle img-fluid m-y m-y-1" src="anna.jpg" />
-                
-                <h3>Anna</h3>
+            {% include partner.html 
+                name="Anna"
+                bio="the ideologist & founder of Ecognize.me, now responsible for clients, projects, finance and promotion"
+            %}
 
-                <p>the ideologist & founder of Ecognize.me, now responsible for clients, projects, finance and promotion</p>
-            </div>
+            {% include separator.html %}
 
-            <div class="col-md-1">
-            </div>
+            {% include partner.html 
+                name="Ruslan"
+                bio="the science guru of Ecognize.me, who rolls it all from the technical prospective"
+            %}
 
-            <div class="col-md-3">
-                <img alt="Ruslan's Photo" class="center-block img-circle img-fluid m-y m-y-1" src="rodriguez.jpg" />
+            {% include separator.html %}
 
-                <h3>Ruslan</h3>
-
-                <p>the science guru of Ecognize.me, who rolls it all from the technical prospective</p>
-            </div>
-
-            <div class="col-md-1">
-            </div>
-
-            <div class="col-md-3">
-                <img alt="Oleksiy's Photo" class="center-block img-circle img-fluid m-y m-y-1" src="protas.jpg" />
-                
-                <h3>Oleksiy</h3>
-
-                <p>the IT-ninja who can do everything out of nothing</p>
-            </div>
+            {% include partner.html 
+                name="Oleksiy"
+                bio="the software ninja who can do everything out of nothing"
+            %}
         </div>
     </div>
 </div>
