@@ -137,6 +137,10 @@ a:focus {color: #fff;}
 .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus { background-color: #054C47; }
 
+#page-top > nav > div.navbar-header > button > span {
+    background-color: #fff;
+}
+
 ::-moz-selection { /* Code for Firefox */
     color: #013533;
     background: #f8f54b;
