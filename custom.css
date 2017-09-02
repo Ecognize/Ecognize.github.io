@@ -5,10 +5,6 @@ body {
     font-size: 1rem;
 }
 
-html {
-  font-size: 16px;
-}
-
 /* Ecognize colors */
 .bg-primary {
     color: #fff !important;
@@ -55,53 +51,55 @@ html {
     background-color: rgba(0, 0, 0, 0.7); 
 }
 
-.h1 {
-    font-size: 2.5rem; 
-}
+@media (min-width: 480px) {
+    .h1 {
+        font-size: 2.5rem; 
+    }
 
-.h2 {
-    font-size: 2rem; 
-}
+    .h2 {
+        font-size: 2rem; 
+    }
 
-.h3 {
-    font-size: 1.75rem; 
-}
+    .h3 {
+        font-size: 1.75rem; 
+    }
 
-.h4 {
-    font-size: 1.5rem; 
-}
+    .h4 {
+        font-size: 1.5rem; 
+    }
 
-.h5 {
-    font-size: 1.25rem; 
-}
+    .h5 {
+        font-size: 1.25rem; 
+    }
 
-.h6 {
-    font-size: 1rem; 
-}
+    .h6 {
+        font-size: 1rem; 
+    }
 
-.lead {
-    font-size: 1.25rem;
-    font-weight: 300; 
-}
+    .lead {
+        font-size: 1.25rem;
+        font-weight: 300; 
+    }
 
-.display-1 {
-    font-size: 6rem;
-    font-weight: 300;
-}
+    .display-1 {
+        font-size: 6rem;
+        font-weight: 300;
+    }
 
-.display-2 {
-    font-size: 5.5rem;
-    font-weight: 300; 
-}
+    .display-2 {
+        font-size: 5.5rem;
+        font-weight: 300; 
+    }
 
-.display-3 {
-    font-size: 4.5rem;
-    font-weight: 300;
-}
+    .display-3 {
+        font-size: 4.5rem;
+        font-weight: 300;
+    }
 
-.display-4 {
-    font-size: 3.5rem;
-    font-weight: 300; 
+    .display-4 {
+        font-size: 3.5rem;
+        font-weight: 300; 
+    }
 }
 
 .p-y-1 {
@@ -141,6 +139,18 @@ a:focus {color: #fff;}
     background-color: #fff;
 }
 
+/* adapt font size to devices */
+@media (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){ 
+    html {
+        font-size: 12px;
+    }
+}
+
 ::-moz-selection { /* Code for Firefox */
     color: #013533;
     background: #f8f54b;
@@ -173,6 +183,20 @@ a.filldiv {
   padding-top: 0px;
   padding-bottom: 0px;
   margin: 1px;
+}
+
+/* Adapt gallery for mobile */
+@media (max-width: 480px){
+    .gallery { 
+        width: 100%;
+    }
+}
+
+/* Adapt team photos for mobile */
+@media (max-width: 480px) {
+    .img-fluid {
+        max-width: 55%;
+    }
 }
 
 /* Prevents the text from being glued to the edge */
