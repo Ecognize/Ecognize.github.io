@@ -207,15 +207,28 @@ a.filldiv {
     padding-top: 15px;
 }
 
-/* Sliding div to move the image out of sight */
-div.gallerySlide {
-    transform: translate3d(0px, 0px, 0px);
-    transition: transform .2s ease-in-out;
+@media (min-width: 480px) {
+    /* Sliding div to move the image out of sight */
+    div.gallerySlide {
+        transform: translate3d(0px, 0px, 0px);
+        transition: transform .2s ease-in-out;
+    } 
+    div.gallerySlide:hover {
+        transform: translate3d(0px, -250px, 0px);
+    }
+    div.galleryImg {
+        height: 100%;
+    }
 }
-  
-div.gallerySlide:hover {
-    transform: translate3d(0px, -250px, 0px);
+@media (max-width: 480px) {
+    div.gallery {
+        height: 100%;
+    }
+    div.gallerySlide {
+        width: 100%;
+    }
 }
+
 
 
 /* Outline for media/workshops */
