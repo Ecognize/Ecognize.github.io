@@ -15,37 +15,39 @@
                 <a href="mailto:admin@ecognize.me">admin@ecognize.me</a></p>
 
                 <div class="m-y-2 m-y-lg row text-center">
-                    <div class="col-xs-2 text-left">
-                      <a href="https://facebook.com/Ecognize" target="_blank">
-                        <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      </a>
-                    </div>
+                    {% include social.html
+                        icon='facebook'
+                        url='https://facebook.com/Ecognize'
+                        size='3'
+                    %}
 
-                    <div class="col-xs-2 text-left">
-                      <a href="https://github.com/Ecognize" target="_blank">
-                        <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      </a>
-                    </div>
+                    {% include social.html
+                        icon='github'
+                        url='https://github.com/Ecognize'
+                        size='3'
+                    %}
 
                     <!-- TODO: add youtube account  -->
 
-                    <div class="col-xs-2 text-left">
-                      <a href="https://www.twitter.com/ecognize" target="_blank">
-                        <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      </a>
-                    </div>
+                    {% include social.html
+                        icon='twitter'
+                        url='https://www.twitter.com/ecognize'
+                        size='3'
+                    %}
 
-                    <div class="col-xs-2 text-left">
-                      <a href="https://pinterest.com/ecognize/" target="_blank">
-                        <i class="fa fa-pinterest fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      </a>
-                    </div>
 
-                    <div class="col-xs-2 text-left">
-                      <a href="https://www.linkedin.com/company/10577069/" target="_blank">
-                        <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      </a>
-                    </div>
+                    {% include social.html
+                        icon='pinterest'
+                        url='https://pinterest.com/ecognize/'
+                        size='3'
+                    %}
+
+
+                    {% include social.html
+                        icon='linkedin'
+                        url='https://www.linkedin.com/company/10577069/'
+                        size='3'
+                    %}
                 </div>
             </div>
 
