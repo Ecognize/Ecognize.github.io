@@ -1,7 +1,23 @@
 <div class="col-md-3">
  	<img alt="{{ include.name }}'s Photo" class="center-block img-circle img-fluid m-y m-y-1" src="media/team-{{ include.name }}.jpg" />
                 
+	<div class="row">
+		<!-- TODO play with positioning  -->
+    	{% for link in include %}
+    		{% if link[0] contains "link_" %}
+    			{% assign icon=link[0] | remove_first:"link_" %}
+    			{% assign url=link[1]  %}
+	    		{% include social.html
+	    			icon=icon
+	    			url=url
+	        		class='fa text-primary'
+	    		%}
+	    	{% endif %}
+	    {% endfor %}
+    </div>
+
     <h3>{{ include.name }}</h3>
 
     <p class="lead">{{ include.bio }}</p>
+
 </div>
