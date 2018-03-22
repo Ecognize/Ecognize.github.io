@@ -125,7 +125,7 @@ body {
 
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /* tweaks for navigation */
@@ -195,7 +195,7 @@ a.filldiv {
 /* Adapt team photos for mobile */
 @media (max-width: 480px) {
     .img-fluid {
-        max-width: 55%;
+        max-width: 45%;
     }
 }
 
